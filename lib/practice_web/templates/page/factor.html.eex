@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Prime Factorization Results</h2>
+
+    <p>Number = <%= @x %></p>
+    <p>Prime Factors = <%= @y %></p>
+  </div>
+</div>

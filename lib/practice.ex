@@ -14,12 +14,18 @@ defmodule Practice do
   def calc(expr) do
     # This is more complex, delegate to lib/practice/calc.ex
     Practice.Calc.calc(expr)
+    # prefix to postfix
   end
 
   def factor(x) do
     # Maybe delegate this too.
-    [1,2,x]
+    Practice.Factor.factor(x)
   end
 
   # TODO: Add a palindrome? function.
+  def palindrome(str) do
+    backwards = String.reverse(str)
+    backwards === str
+  end
+
 end
